@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sociala.</title>
+  <!-- import bootstrap -->
+  <link rel="stylesheet" href="vendor/css/bootstrap.min.css">
+  <!-- fontawesome -->
+  <link rel="stylesheet" href="vendor/css/fontawesome.min.css">
+  <!-- owl carousel -->
+  <link rel="stylesheet" href="vendor/css/owl.carousel.min.css">
+  <link rel="stylesheet" href="vendor/css/owl.theme.default.min.css">
+  <!-- lightbox  -->
+  <link rel="stylesheet" href="vendor/css/lightbox.min.css">
+  <!-- customized -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/navbar.css">
+</head>
+
+<body>
+  <!-- start navbar -->
+  <nav class="navbar navbar-expand-lg bg-transparent fixed-top">
+    <div class="container-fluid justify-content-start">
+      <a class="navbar-brand fredoka-font" href="index.html"><i class="fa-solid fa-bolt text-success"></i><span
+          class="text-primary">Sociala.</span></a>
+      
+      <div class="second-list ms-auto d-none d-lg-block" id="navbarSupportedContent">
+       <div class="d-flex">
+        <!-- login button trigger model -->
+        <button type="button" class="btn bg-black rounded-pill px-4 text-white me-2" data-bs-toggle="modal" data-bs-target="#loginm">
+            login
+          </button>
+            <!-- register button trigger model -->
+        <button type="button" class="btn bg-primary rounded-pill px-4 text-white" data-bs-toggle="modal" data-bs-target="#registerm">
+            Register
+          </button>
+       </div>
+      </div>
+      <div class="third-list ms-auto d-block d-lg-none" id="navbarSupportedContent">
+        <ul class="list-unstyled me-auto mb-2 mb-lg-0 d-flex align-items-center">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">
+              <i class="fa-regular fa-comment"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fa-solid fa-video"></i></a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link "><i class="fa-solid fa-magnifying-glass"></i></i></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link">
+              <button class=" offcanvabtn border-0 position-relative" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+
+              </button>
+
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- login Modal -->
+<div class="modal fade" id="loginm" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-3">
+                <h2 class="fw-bolder">Log into <br> your account</h2>
+                <form class="py-3">
+               <div class="input-holder d-flex align-items-center p-3 rounded">
+                   <i class="fa-solid fa-envelope text-gray pe-4 fs-4"></i>
+                   <input type="email" class="bg-transparent border-0 shadow-none" placeholder="Your Email Address">
+               </div>
+               <div class="input-holder d-flex align-items-center p-3 rounded">
+                   <i class="fa-solid fa-lock text-gray pe-4 fs-4"></i>
+                   <input type="password" class="bg-transparent border-0 shadow-none" placeholder="Password">
+               </div>
+               <div class="d-flex justify-content-between align-items-center">
+                   <div class="form-check">
+                       <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                       <label class="form-check-label font-xss text-gray" for="flexCheckDefault">
+                        Remember me
+                       </label>
+                     </div>
+                     <a href="#" class="text-black font-xs font-600">Forget your Password?</a>
+            
+               </div>
+               <button class="btn bg-black w-100 text-white py-3 mt-3">Login</button>
+                </form>
+               <p class="text-gray font-600 font-xs">Don't have account <a href="register.html" class="text-primary fw-bolder">Register</a></p>
+              <div class="text-center">
+               <p class="text-gray font-600 font-xs">Or, Sign in with your social account</p>
+              <a href="#"class="bg-primary w-100 d-flex align-items-center p-2 text-white rounded mb-2">
+               <img src="assets/img/google.png" alt="" class="w35 bg-white p-1">
+               <span class="ps-4">Sign in with Google</span>
+              </a>
+              <a href="#"class="bg-facebook w-100 d-flex align-items-center p-2 text-white rounded mb-2">
+               <img src="assets/img/facebook.png" alt="" class="w35 ">
+               <span class="ps-4">Sign in with facebook</span>
+              </a> 
+           </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <!-- register Modal -->
+<div class="modal fade" id="registerm" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-3 overflow-scroll">
+            <h2 class="fw-bolder">Create <br> your account</h2>
+            <form class="py-3">
+                <div class="input-holder d-flex align-items-center p-3 rounded">
+                    <i class="fa-solid fa-user text-gray pe-4 fs-4"></i>
+                    <input type="text" class="bg-transparent border-0 shadow-none" placeholder="Your Name">
+                </div>
+           <div class="input-holder d-flex align-items-center p-3 rounded">
+               <i class="fa-solid fa-envelope text-gray pe-4 fs-4"></i>
+               <input type="email" class="bg-transparent border-0 shadow-none" placeholder="Your Email Address">
+           </div>
+           <div class="input-holder d-flex align-items-center p-3 rounded">
+               <i class="fa-solid fa-lock text-gray pe-4 fs-4"></i>
+               <input type="password" class="bg-transparent border-0 shadow-none" placeholder="Password">
+           </div>
+           <div class="input-holder d-flex align-items-center p-3 rounded">
+            <i class="fa-solid fa-lock text-gray pe-4 fs-4"></i>
+            <input type="password" class="bg-transparent border-0 shadow-none" placeholder=" Confirm Password">
+        </div>
+           <div class="d-flex justify-content-between align-items-center">
+               <div class="form-check">
+                   <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                   <label class="form-check-label font-xss text-gray" for="flexCheckDefault">
+Accept Term and Conditions                   </label>
+                 </div>
+           </div>
+           <button class="btn bg-black w-100 text-white py-3 mt-3">Register</button>
+            </form>
+           <p class="text-gray font-600 font-xs">Already have account <a href="login.html" class="text-primary fw-bolder">Login</a></p>
+          <div class="text-center">
+           <p class="text-gray font-600 font-xs">Or, Sign in with your social account</p>
+          <a href="#"class="bg-primary w-100 d-flex align-items-center p-2 text-white rounded mb-2">
+           <img src="assets/img/google.png" alt="" class="w35 bg-white p-1">
+           <span class="ps-4">Sign in with Google</span>
+          </a>
+          <a href="#"class="bg-facebook w-100 d-flex align-items-center p-2 text-white rounded mb-2">
+           <img src="assets/img/facebook.png" alt="" class="w35 ">
+           <span class="ps-4">Sign in with facebook</span>
+          </a> 
+       </div>
+    </div>
+      </div>
+    </div>
+  </div>
+  <!-- end navbar -->
+
+  <!-- main content -->
+  <section>
+    <div class="row g-0" style="height: 100vh;">
+        <div class="d-xl-block d-none col-5 ">
+            <img src="assets/img/undraw_Business_deal_re_up4u.png" alt="login" class="w-100 h-100">
+        </div>
+        <div class="col-xl-7">
+            <div class="d-flex align-items-center justify-content-center h-100 ">
+              <div class="form-wrapper">
+             <h2 class="fw-bolder">Log into <br> your account</h2>
+             <form class="py-3">
+            <div class="input-holder d-flex align-items-center p-3 rounded">
+                <i class="fa-solid fa-envelope text-gray pe-4 fs-4"></i>
+                <input type="email" class="bg-transparent border-0 shadow-none" placeholder="Your Email Address">
+            </div>
+            <div class="input-holder d-flex align-items-center p-3 rounded">
+                <i class="fa-solid fa-lock text-gray pe-4 fs-4"></i>
+                <input type="password" class="bg-transparent border-0 shadow-none" placeholder="Password">
+            </div>
+            <div class="d-flex justify-content-between align-items-center">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label font-xss text-gray" for="flexCheckDefault">
+                     Remember me
+                    </label>
+                  </div>
+                  <a href="#" class="text-black font-xs font-600">Forget your Password?</a>
+         
+            </div>
+            <button class="btn bg-black w-100 text-white py-3 mt-3">Login</button>
+             </form>
+            <p class="text-gray font-600 font-xs">Don't have account <a href="register.html" class="text-primary fw-bolder">Register</a></p>
+           <div class="text-center">
+            <p class="text-gray font-600 font-xs">Or, Sign in with your social account</p>
+           <a href="#"class="bg-primary w-100 d-flex align-items-center p-2 text-white rounded mb-2">
+            <img src="assets/img/google.png" alt="" class="w35 bg-white p-1">
+            <span class="ps-4">Sign in with Google</span>
+           </a>
+           <a href="#"class="bg-facebook w-100 d-flex align-items-center p-2 text-white rounded mb-2">
+            <img src="assets/img/facebook.png" alt="" class="w35 ">
+            <span class="ps-4">Sign in with facebook</span>
+           </a>
+        </div>    
+        </div>
+
+            </div>
+        </div>
+    </div>
+  </section>
+
+
+
+
+
+  <!--import bootstrap  -->
+  <script src="vendor/js/bootstrap.min.js"></script>
+  <!-- fontaesome -->
+  <script src="vendor/js/all.min.js"></script>
+  <!-- jquery -->
+  <script src="vendor/js/jquery-3.7.1.min.js"></script>
+  <!-- lightbox -->
+  <script src="vendor/js/lightbox.min.js"></script>
+  <!-- owl carousel -->
+  <script src="vendor/js/owl.carousel.min.js"></script>
+  <!-- customized -->
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>
